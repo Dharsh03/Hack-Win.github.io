@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hack & Win @ Krishna Arts</title>
+    <link href="style.css" rel="stylesheet">
+</head>
+<style>
+    table, td {
+      text-align: center;
+    }
+    </style>
+<body>
+    
+<nav id="navbar" class="nav">   
+    
+    <ul class="nav-list">
+        <li>
+            <a href="#Problem">Problem Statement</a>
+        </li>
+        <li>
+            <a href="#about">About</a>
+        </li>
+        <li>
+            <a href="#contact">Contact</a>
+        </li>
+        <li>        
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSdV9vOQijLU3mZNpY6qBeEjWsvghdkdaw998vFDFAyQa6Bb9Q/viewform?usp=sf_link" target="_blank">Register</a>
+        </li>
+    </ul>
+</nav>
+ 
+<marquee width="100%" direction="left" height="100px" style="margin-top:15%">
+    <a href="https://docs.google.com/forms/d/e/1FAIpQLSdV9vOQijLU3mZNpY6qBeEjWsvghdkdaw998vFDFAyQa6Bb9Q/viewform?usp=sf_link" target="_blank"><b style="font-size: 22px;">Last Date for Registration: 4:00 p.m, March 10th, 2021</b></a>
+</marquee>
+<img src="1614770337955.png" style="width:35%;height:35%;margin-top:10px;margin-left:33%;">
+<h3 style="font-size:29px;text-align:center;margin-top:3%;">SRI KRISHNA ARTS AND SCIENCE COLLEGE</h3>
+<h4 style="color: white;text-align: center;margin-top: 1%;">Coimbatore </h4>
+<h2 style="color: white;text-align: center;margin-top: 10%;">Hack & Win @ Krishna Arts</h2>
+<img src="Adobe_Post_20210309_1249140.4955425883083935.png" style="width: 500px;height: 500px;margin-left: auto;margin-right: auto;">
+<p style="font-size:22px">“If you look at history, Innovation does not come just from giving people incentives, It comes from creating environments where their ideas can connect.” 
+    <br><cite style="padding-left: 40%;">~Steven Johnson</cite></p>
+<div id="timer">
+    <div id="days"></div>
+    <div id="hours"></div>
+    <div id="minutes"></div>
+    <div id="seconds"></div>
+</div>
+
+</section>
+<p style="text-decoration-line: underline;font-size: 25px;cursor: pointer;"><b><a href="https://drive.google.com/file/d/1gqlphaKPO3ygAKN-SWClx1Ao8MsnY5yE/view?usp=sharing" target="_blank">Click for Rules & Regulation</a></b>
+    </p>
+    <button class="btn draw-border" style="background-color:black;color:white;border:none;cursor: pointer;padding:17px 27px;margin-top: 2%;" onclick="myFunction()"><b>For Prelim</b></button><br>
+
+<div id="myDIV" style="display: none;background-color:#be3144;">
+    <p style="text-align: center;font-size: 21px;line-height:normal;">Project submission should be in the below mentioned format:</p>
+    <ul style="text-align: center;font-size: 21px;line-height: normal;">
+         <li>• Problem statement</li>
+         <li>• Solution</li>
+         <li>• Flow Diagram</li>
+         <li>• Technology Stack</li>
+     </ul><br>
+     <p style="text-align: center;font-size:21px;cursor:pointer;line-height:normal;">Team Formation</p>
+<ul style="text-align: center;font-size:21px;line-height: normal;">
+</li>• A Team should consist of 4 members.</li>
+    <li>• All Teams should be registered with the google form on or before March 10th,2021.</li>
+    </ul>
+</div>
+
+<section id="section" class="contact-section" style="line-height: 16px;">
+    <div class="contact-section-header" style="line-height:normal;">
+        <h5>SESSIONS</h5><br>
+        <p style="font-size: 16px;">On 11th, 12th, 13th, Evening 3:00 pm to 5:00 pm via zoom call</p><br>
+        <p style="font-size: 20px;color: #00c4ff;text-align: justify;"><b>Session 1: Kickstart</b></p>
+            <p style="font-size: 19px;text-align: justify;line-height:normal;">The session begins with a general introduction to Hackathon and its significance with complete process.<br></p>
+            <br><p style="color: #00c4ff;font-size: 20px;text-align: justify;"><b>Session 2: Innovations through Hackathon</b></p>
+            <p style="font-size: 19px;text-align: justify;line-height:normal;">Session about the lifecycle of hackathon and its stages in innovation.<br></p>
+            <br><p style="color: #00c4ff;font-size: 20px;text-align: left;"><b>Session 3: Prototype</b></p>
+            <p style="font-size: 19px;text-align: justify;line-height:normal;">Hands on session about Product Prototyping.</p>
+        
+    </div>
+</section>
+
+<section id="Problem" style="background: #be3144;width: 100%;">
+<br><h2>PROBLEM STATEMENT</h3><br><br>
+    <button class="btn draw-border" style="background-color: rgb(0, 0, 0);color:#ffffff;padding: 20px 40px;font-size: 20px;font-family: monospace;border-radius: 10px;"><a href="PS.pdf" target="_blank">Click Here</a></button><br><br><br>
+</section>
+
+
+
+
+<script>
+    function makeTimer() {
+
+        //		var endTime = new Date("29 April 2018 9:56:00 GMT+01:00");
+        var endTime = new Date("20 March 2021 8:00:00 UTC+05:30");
+        endTime = (Date.parse(endTime) / 1000);
+
+        var now = new Date();
+        now = (Date.parse(now) / 1000);
+
+        var timeLeft = endTime - now;
+
+        var days = Math.floor(timeLeft / 86400);
+        var hours = Math.floor((timeLeft - (days * 86400)) / 3600);
+        var minutes = Math.floor((timeLeft - (days * 86400) - (hours * 3600 )) / 60);
+        var seconds = Math.floor((timeLeft - (days * 86400) - (hours * 3600) - (minutes * 60)));
+
+        if (hours < "10") { hours = "0" + hours; }
+        if (minutes < "10") { minutes = "0" + minutes; }
+        if (seconds < "10") { seconds = "0" + seconds; }
+
+        $("#days").html(days + "<span>Days</span>");
+        $("#hours").html(hours + "<span>Hours</span>");
+        $("#minutes").html(minutes + "<span>Minutes</span>");
+        $("#seconds").html(seconds + "<span>Seconds</span>");
+
+    }
+
+    setInterval(function() { makeTimer(); }, 1000);
+</script>
+
+<script>
+    function myFunction() {
+      var x = document.getElementById("myDIV");
+      if (x.style.display === "block") {
+        x.style.display = "none";
+      } else {
+        x.style.display = "block";
+      }
+    }
+    </script>
+
+<section id="about" class="contact-section">
+    <div class="contact-section-header">
+        <h4>ABOUT</h4><br>
+        <p style="font-size: 19px;text-align: justify;line-height:normal;">A Hack & Win @ Krishna is an event of 12 hours where people come together to solve problems. This is a problem solving event.(It does not have to involve technology.) with three days workshops (March 14th,16th and 18th).<br>
+        
+            <br>The hardest thing about running a successful hackathon is being welcoming to newcomers and helping them get involved in an activity.<br>
+            <br>Here are the goals we keep in mind:<br>
+            • Strengthen the community that the hackathon is for.<br>
+            •	Be welcoming to newcomers to the community.<br>
+            •	Provide an opportunity for participants to learn something new.<br>
+            •	Provide a space and a time for participants to make headway on problems they are interested in.<br>
+        <br>Real life problems are hard! Think of the hackathon as a pit-stop on a long journey to solve problems or as a training session to prepare participants for solving problems.
+        </p>
+    </div>
+</section>
+
+<div>
+    <button class="btn draw-border" style="background-color: rgb(0, 0, 0);color:#ffffff;padding: 20px 40px;font-size: 20px;font-family: monospace;border-radius: 10px;"><a href="https://docs.google.com/forms/d/e/1FAIpQLSdV9vOQijLU3mZNpY6qBeEjWsvghdkdaw998vFDFAyQa6Bb9Q/viewform?usp=sf_link" target="_blank">Register</a></button>
+</div>
+
+<SECTION id="contact" class="contact">
+    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdiLHKTENQruIE5gd0sRR8_bNiy5Gd0npPbv2zr3B7_y_4CjQ/viewform?embedded=true" width="640" height="820" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+</SECTION>
+<br>
+
+<footer>
+    <p><b>EVENT ORGANISERS</b><br>
+        <table style="width:85%;padding-left: 14%;">
+            <tr>
+                <td><a href="#">Srinath.A</a></td>
+                <td><a href="#">Sri Arjun.R</a></td>
+                <td><a href="#">Cathrine Jeeva.J</a></td>
+              </tr>
+            <tr>
+              <td><a href="#">Shifana.J</a></td> 
+              <td><a href="#">Thansif Khan.A</a></td>
+              <td><a href="#">Muhammed faiz</a></td>
+            </tr>
+            <tr>
+                <td><a href="#">Malathi.R</a></td>
+                <td><a href="#">Lijitha.M.A</a></td>
+                <td><a href="#">Vasunthara.M</a></td>
+            </tr>
+            <tr>
+                <td><a href="#">Vishnu Priya.S</a></td>
+                <td><a href="#">Neeraj Bhuvan.M</a></td>
+                <td><a href="#">Anjana Dass</a></td>
+            </tr>
+            <tr>
+                <td><a href="#">Akshay.D</a></td>
+                <td><a href="#">Ashwin.S</a></td>
+                <td><a href="#">Swetha.C</a></td>
+            </tr>
+            <tr>
+                <td><a href="#">Madhumitha.R</a></td>
+                <td><a href="#">Mohamed Ali.A</a></td>
+                <td><a href="#">Tharun.J</a></td>
+            </tr>
+            <tr>
+                <td><a href="#">Aravind Kumar.J</a></td>
+                <td><a href="#">Naga Bharani.G.V</a></td>   
+                <td><a href="#">Surya Prakash.B</a></td>    
+            </tr>
+            <tr>
+                <td><a href="#"></a></td>
+                <td><a href="#">Dharshan Kumar.S</a></td>
+                <td><a href="#"></a></td>
+            </tr>
+          </table>
+  </footer>
+</body>
+</html>
